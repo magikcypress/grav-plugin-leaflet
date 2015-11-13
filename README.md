@@ -64,7 +64,6 @@ Also you can override the default options per-page:
       zoom: 20
     ---
 
-
 # Updating
 
 As development for this plugin continues, new versions may become available that add additional features and functionality, improve compatibility with newer Grav releases, and generally provide a better user experience. Updating this plugin is easy, and can be done through Grav's GPM system, as well as manually.

@@ -9,7 +9,7 @@ author:
 homepage: https://github.com/magikcypress/grav-plugin-leaflet
 keywords: "leaflet, maps, plugin"
 bugs: https://github.com/magikcypress/grav-plugin-leaflet/issues
-docs: https://github.com/magikcypress/grav-plugin-leaflet/blob/develop/README.md
+docs: https://github.com/magikcypress/grav-plugin-leaflet/blob/master/README.md
 license: MIT
 
 form:

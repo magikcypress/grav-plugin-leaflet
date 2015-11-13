@@ -1,6 +1,6 @@
 # Grav Leaflet Plugin
 
-`Leaflet` is a [Grav](http://github.com/getgrav/grav) plugin and add the [Leaflet](http://leaflet.com/) in Grav pages.
+`Leaflet` is a [Grav](http://github.com/getgrav/grav) plugin and add the [Leaflet](http://leafletjs.com/) in Grav pages.
 
 # Installation
 

@@ -44,10 +44,11 @@ The plugin comes with some sensible default configuration, that are pretty self 
 | `id`              | Div ID (_unique_)       | gmap    | `id: "gmap"`              |
 | `width`           | Map Width               | 600     | `width: 600`              |
 | `height`          | Map Height              | 450     | `height: 450`             |
-| `type`            | Map Type                | roadmap | `type: "roadmap"`         |
 | `class`           | Div Class               | leaflet | `class: "leaflet"`        |
 | `lat`             | Latitude                |    51   | `latitude: "London"`      |
-| `lat`             | Longitude               |    0    | `longitude: "London"`     |
+| `lng`             | Longitude               |    0    | `longitude: "London"`     |
+| `lat_marker`      | Latitude Marker         |    51   | `latitude: "London"`      |
+| `lng_marker`      | Longitude Marker        |    0    | `longitude: "London"`     |
 | `address`         | Map Address             |         | `address: "Rome street"`  |
 | `zoom`            | Map Zoom                | 15      | `zoom: 15`                |
 

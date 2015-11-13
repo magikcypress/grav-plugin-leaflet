@@ -1,0 +1,27 @@
+name: Leaflet
+version: 1.0.4
+description: "This plugin add Leaflet [GMaps](http://leafletjs.com/) into your **Grav site**."
+icon: map-marker
+author:
+  name: Cyp
+  email: cyp@rouquin.me
+  url: http://rouquin.me
+homepage: https://github.com/magikcypress/grav-plugin-leaflet
+keywords: "leaflet, maps, plugin"
+bugs: https://github.com/magikcypress/grav-plugin-leaflet/issues
+docs: https://github.com/magikcypress/grav-plugin-leaflet/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool

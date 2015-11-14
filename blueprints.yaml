@@ -1,6 +1,6 @@
 name: Leaflet
-version: 1.0.4
-description: "This plugin add Leaflet [GMaps](http://leafletjs.com/) into your **Grav site**."
+version: 1.0.1
+description: "This plugin add [Leaflet](http://leafletjs.com/) into your **Grav site**."
 icon: map-marker
 author:
   name: Cyp

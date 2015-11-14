@@ -41,7 +41,7 @@ The plugin comes with some sensible default configuration, that are pretty self 
 |      Variable     |       Description       | Default |           Example         |
 | :---------------- | :---------------------- | :------ | :------------------------ |
 | `enabled`         | Enable/Disable Plugin   | enable  | `enabled: true`           |
-| `id`              | Div ID (_unique_)       | gmap    | `id: "gmap"`              |
+| `id`              | Div ID (_unique_)       | leaflet | `id: "leaflet"`           |
 | `width`           | Map Width               | 600     | `width: 600`              |
 | `height`          | Map Height              | 450     | `height: 450`             |
 | `class`           | Div Class               | leaflet | `class: "leaflet"`        |

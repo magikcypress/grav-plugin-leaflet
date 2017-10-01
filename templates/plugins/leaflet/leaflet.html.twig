@@ -1,5 +1,5 @@
 <div id="{{ id }}" style="width: {{ width }}px; height: {{ height }}px"></div>
-{{type}}
+{{ type }}
 
 {% if not instances %}
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.1.0/leaflet.css" />
@@ -13,8 +13,8 @@
 			}).addTo(map);
  
             var myItems = [
-                {% for items in items_list %}
-                    [ "{{ items[0] }}", {{ items[1] }}, {{ items[2] }} ],
+                {% for marker in markers %}
+                    [ "{{ marker.nom }}", {{ marker.lat }}, {{ marker.lng }} ],
                 {% endfor %}
             ];
 

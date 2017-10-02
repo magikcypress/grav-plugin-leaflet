@@ -1,3 +1,8 @@
+# v1.0.2
+## 01/10/2017
+1. [](#new)
+    * Add feature multimarkers
+
 # v1.0.1
 ## 14/11/2015
 

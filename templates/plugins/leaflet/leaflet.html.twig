@@ -1,5 +1,6 @@
 <div id="{{ id }}" style="width: {{ width }}px; height: {{ height }}px"></div>
-{{type}}
+{{ type }}
+
 {% if not instances %}
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.1.0/leaflet.css" />
 		<script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.1.0/leaflet.js"></script>
@@ -10,11 +11,20 @@
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 			}).addTo(map);
+ 
+            var myItems = [
+                {% for marker in markers %}
+                    [ "{{ marker.name }}", {{ marker.lat }}, {{ marker.lng }} ],
+                {% endfor %}
+            ];
 
-			var marker = L.marker([{{ lat_marker }}, {{ lng_marker }}])
-				.addTo(map)
-				.bindPopup("{{ address }}")
-            	.openPopup();
+            var markers = new L.layerGroup();
+            for (var i = 0; i < myItems.length; i++) {
+                var item = myItems[i];
+                marker = new L.marker([item[1],item[2]]).bindPopup(item[0]);
+                markers.addLayer(marker);
+            }
+            map.addLayer(markers);
 		</script>
 
 {% endif %}

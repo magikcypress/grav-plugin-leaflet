@@ -6,7 +6,11 @@ height: 450
 class: "leaflet"
 lat: "51"
 lng: "0"
-lat_marker: "51"
-lng_marker: "0"
+markers:
+    -
+        name: "Rome street" 
+        lat: 51
+        lng: 0
+        
 address: "London"
 zoom: 15

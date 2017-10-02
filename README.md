@@ -47,7 +47,7 @@ The plugin comes with some sensible default configuration, that are pretty self 
 | `class`           | Div Class               | leaflet | `class: "leaflet"`        |
 | `lat`             | Latitude                |    51   | `latitude: "London"`      |
 | `lng`             | Longitude               |    0    | `longitude: "London"`     |
-| `markers` | Information of marker (popup content, latitude, longitude     |   'Rome street', 51, 0  | `Marker: ["Rome street", 51, 0]" | 
+| `markers` | Information of marker (popup content, latitude, longitude     |   'Rome street', 51, 0  | `Marker: ["Rome street", 51, 0]` | 
 | `lat_marker`      | Latitude Marker         |    51   | `latitude: "London"`      |
 | `lng_marker`      | Longitude Marker        |    0    | `longitude: "London"`     |
 | `address`         | Map Address             |         | `address: "Rome street"`  |

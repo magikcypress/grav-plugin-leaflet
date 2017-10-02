@@ -56,10 +56,8 @@ class LEafletPlugin extends Plugin
 			'class'     => $this->config->get('class'),
 			'lat'       => $this->config->get('lat'),
 			'lng'       => $this->config->get('lng'),
-			'lat_marker'       => $this->config->get('lat_marker'),
-			'lng_marker'       => $this->config->get('lng_marker'),
+            'markers' => $this->config->get('markers'),
 			'zoom'      => $this->config->get('zoom'),
-			'address'   => $this->config->get('address'),
 			'instances' => self::$instances
 		];
 

@@ -14,7 +14,7 @@
  
             var myItems = [
                 {% for marker in markers %}
-                    [ "{{ marker.nom }}", {{ marker.lat }}, {{ marker.lng }} ],
+                    [ "{{ marker.name }}", {{ marker.lat }}, {{ marker.lng }} ],
                 {% endfor %}
             ];
 

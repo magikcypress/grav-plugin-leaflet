@@ -32,7 +32,7 @@ Add the Twig code to your template or page (_for page you need to enable the twi
 
 The params format follow the Twig array, example:
 
-    {{ leaflet({'id': 'leaflet', 'class': 'leaflet'}) }}
+    {{ leaflet({'id': 'leaflet', 'class': 'leaflet', 'markers': ['Rome street', 51, 0] }) }}
 
 The plugin comes with some sensible default configuration, that are pretty self explanatory:
 
@@ -47,6 +47,7 @@ The plugin comes with some sensible default configuration, that are pretty self 
 | `class`           | Div Class               | leaflet | `class: "leaflet"`        |
 | `lat`             | Latitude                |    51   | `latitude: "London"`      |
 | `lng`             | Longitude               |    0    | `longitude: "London"`     |
+| `markers` | Information of marker (popup content, latitude, longitude     |   'Rome street', 51, 0  | `Marker: ["Rome street", 51, 0]" | 
 | `lat_marker`      | Latitude Marker         |    51   | `latitude: "London"`      |
 | `lng_marker`      | Longitude Marker        |    0    | `longitude: "London"`     |
 | `address`         | Map Address             |         | `address: "Rome street"`  |

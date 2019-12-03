@@ -1,14 +1,14 @@
-<div id="{{ id }}" style="width: {{ width }}px; height: {{ height }}px"></div>
+<div id="{{ id }}" style="width: {{ width }}{{ w_unit }}; height: {{ height }}{{ h_unit }}"></div>
 {{type}}
 {% if not instances %}
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.1.0/leaflet.css" />
-		<script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.1.0/leaflet.js"></script>
+		<link rel="stylesheet" href="//unpkg.com/leaflet/dist/leaflet.css" />
+		<script src="//unpkg.com/leaflet/dist/leaflet.js"></script>
 
 		<script>
 			var map = L.map('{{ id }}').setView([{{ lat }}, {{ lng }}], {{ zoom }});
 
-			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-				attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+			L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+				attribution: ''
 			}).addTo(map);
 
 			var marker = L.marker([{{ lat_marker }}, {{ lng_marker }}])
@@ -16,5 +16,10 @@
 				.bindPopup("{{ address }}")
             	.openPopup();
 		</script>
+		<style>
+		    #{{ id }} .leaflet-pane.leaflet-tile-pane {
+                filter: {{ css_tile_filter }}({{ css_tile_filter_value }});
+            }
+		</style>
 
 {% endif %}

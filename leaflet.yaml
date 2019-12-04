@@ -1,8 +1,10 @@
 enabled: true
 
 id: "leaflet"
-width: 600
+width: 100
+w_unit: "%"
 height: 450
+h_unit: "px"
 class: "leaflet"
 lat: "51"
 lng: "0"
@@ -10,3 +12,5 @@ lat_marker: "51"
 lng_marker: "0"
 address: "London"
 zoom: 15
+css_tile_filter: "grayscale"
+css_tile_filter_value: .7

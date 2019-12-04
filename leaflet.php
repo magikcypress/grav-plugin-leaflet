@@ -52,7 +52,9 @@ class LEafletPlugin extends Plugin
 		$this->template_vars      = [
 			'id'        => $this->config->get('id') . '-' . self::$instances,
 			'width'     => $this->config->get('width'),
+			'w_unit'     => $this->config->get('w_unit'),
 			'height'    => $this->config->get('height'),
+			'h_unit'    => $this->config->get('h_unit'),
 			'class'     => $this->config->get('class'),
 			'lat'       => $this->config->get('lat'),
 			'lng'       => $this->config->get('lng'),
@@ -60,6 +62,8 @@ class LEafletPlugin extends Plugin
 			'lng_marker'       => $this->config->get('lng_marker'),
 			'zoom'      => $this->config->get('zoom'),
 			'address'   => $this->config->get('address'),
+			'css_tile_filter'   => $this->config->get('css_tile_filter'),
+			'css_tile_filter_value'   => $this->config->get('css_tile_filter_value'),
 			'instances' => self::$instances
 		];
 

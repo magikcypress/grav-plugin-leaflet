@@ -38,23 +38,23 @@ The plugin comes with some sensible default configuration, that are pretty self 
 
 # Options
 
-|      Variable           |       Description       | Default   |           Example            |
-| :---------------------- | :---------------------- | :-------- | :--------------------------- |
-| `enabled`               | Enable/Disable Plugin   | enable    | `enabled: true`              |
-| `id`                    | Div ID (_unique_)       | leaflet   | `id: "leaflet"`              |
-| `width`                 | Map Width               | 600       | `width: 100`                 |
-| `w_unit`                | Map Width unit          | px        | `w_unit: %`                 |
-| `height`                | Map Height              | 450       | `height: 450`                |
-| `h_unit`                | Map Height unit         | px        | `h_unit: px`                |
-| `class`                 | Div Class               | leaflet   | `class: "leaflet"`           |
-| `lat`                   | Latitude                |    51     | `latitude: "London"`         |
-| `lng`                   | Longitude               |    0      | `longitude: "London"`        |
-| `lat_marker`            | Latitude Marker         |    51     | `latitude: "London"`         |
-| `lng_marker`            | Longitude Marker        |    0      | `longitude: "London"`        |
-| `address`               | Map Address             |           | `address: "Rome street"`     |
-| `zoom`                  | Map Zoom                |    15     | `zoom: 15`                   |
-| `css_tile_filter`       | tiles css filter        | grayscale | `css_tile_filter: grayscale` |
-| `css_tile_filter_value` | tiles css filter val    | .7        | `css_tile_filter_value: .7`  |
+|      Variable           |       Description       | Default   |           Example              |
+| :---------------------- | :---------------------- | :-------- | :----------------------------- |
+| `enabled`               | Enable/Disable Plugin   | enable    | `enabled: true`                |
+| `id`                    | Div ID (_unique_)       | leaflet   | `id: "leaflet"`                |
+| `width`                 | Map Width               | 600       | `width: 100`                   |
+| `w_unit`                | Map Width unit          | px        | `w_unit: "%"`                  |
+| `height`                | Map Height              | 450       | `height: 450`                  |
+| `h_unit`                | Map Height unit         | px        | `h_unit: "px"`                 |
+| `class`                 | Div Class               | leaflet   | `class: "leaflet"`             |
+| `lat`                   | Latitude                |    51     | `latitude: "London"`           |
+| `lng`                   | Longitude               |    0      | `longitude: "London"`          |
+| `lat_marker`            | Latitude Marker         |    51     | `latitude: "London"`           |
+| `lng_marker`            | Longitude Marker        |    0      | `longitude: "London"`          |
+| `address`               | Map Address             |           | `address: "Rome street"`       |
+| `zoom`                  | Map Zoom                |    15     | `zoom: 15`                     |
+| `css_tile_filter`       | tiles css filter        | grayscale | `css_tile_filter: "grayscale"` |
+| `css_tile_filter_value` | tiles css filter val    | .7        | `css_tile_filter_value: .7`    |
 
 
 To customize the plugin, you first need to create an override config. To do so, create the folder `user/config/plugins` (_if it doesn't exist already_) and copy the [leaflet.yaml](leaflet.yaml) config file in there and then make your edits.

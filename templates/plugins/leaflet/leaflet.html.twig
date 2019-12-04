@@ -10,6 +10,7 @@
 			L.tileLayer('//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 			}).addTo(map);
+            		map.scrollWheelZoom.disable();
 
 			var marker = L.marker([{{ lat_marker }}, {{ lng_marker }}])
 				.addTo(map)

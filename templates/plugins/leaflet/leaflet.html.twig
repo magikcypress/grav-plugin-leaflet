@@ -6,9 +6,9 @@
 
 		<script>
 			var map = L.map('{{ id }}').setView([{{ lat }}, {{ lng }}], {{ zoom }});
-
-			L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-				attribution: ''
+			
+			L.tileLayer('//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 			}).addTo(map);
 
 			var marker = L.marker([{{ lat_marker }}, {{ lng_marker }}])
